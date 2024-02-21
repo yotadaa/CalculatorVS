@@ -1,0 +1,10 @@
+H:\f1e122037\vs\CalculatorVS\bin\Debug\CalculatorApp.exe.config
+H:\f1e122037\vs\CalculatorVS\bin\Debug\CalculatorApp.exe
+H:\f1e122037\vs\CalculatorVS\bin\Debug\CalculatorApp.pdb
+H:\f1e122037\vs\CalculatorVS\obj\Debug\CalculatorApp.csproj.AssemblyReference.cache
+H:\f1e122037\vs\CalculatorVS\obj\Debug\CalculatorApp.Form1.resources
+H:\f1e122037\vs\CalculatorVS\obj\Debug\CalculatorApp.Properties.Resources.resources
+H:\f1e122037\vs\CalculatorVS\obj\Debug\CalculatorApp.csproj.GenerateResource.cache
+H:\f1e122037\vs\CalculatorVS\obj\Debug\CalculatorApp.csproj.CoreCompileInputs.cache
+H:\f1e122037\vs\CalculatorVS\obj\Debug\CalculatorApp.exe
+H:\f1e122037\vs\CalculatorVS\obj\Debug\CalculatorApp.pdb

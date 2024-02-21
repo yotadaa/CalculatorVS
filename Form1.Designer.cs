@@ -29,7 +29,7 @@ namespace CalculatorApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.teks = new System.Windows.Forms.TextBox();
             this.AddZero = new System.Windows.Forms.Button();
             this.commas = new System.Windows.Forms.Button();
             this.resultButton = new System.Windows.Forms.Button();
@@ -51,14 +51,14 @@ namespace CalculatorApp
             this.sumButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // teks
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 70F);
-            this.textBox1.Location = new System.Drawing.Point(12, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(419, 113);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.teks_TextChanged);
+            this.teks.Font = new System.Drawing.Font("Microsoft Sans Serif", 70F);
+            this.teks.Location = new System.Drawing.Point(12, 9);
+            this.teks.Name = "teks";
+            this.teks.Size = new System.Drawing.Size(419, 113);
+            this.teks.TabIndex = 0;
+            this.teks.TextChanged += new System.EventHandler(this.teks_TextChanged);
             // 
             // AddZero
             // 
@@ -293,7 +293,7 @@ namespace CalculatorApp
             this.Controls.Add(this.resultButton);
             this.Controls.Add(this.commas);
             this.Controls.Add(this.AddZero);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.teks);
             this.Name = "Form1";
             this.Text = "Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -304,7 +304,7 @@ namespace CalculatorApp
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox teks;
         private System.Windows.Forms.Button AddZero;
         private System.Windows.Forms.Button commas;
         private System.Windows.Forms.Button resultButton;
