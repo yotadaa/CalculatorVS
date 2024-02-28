@@ -49,21 +49,26 @@ namespace CalculatorApp
             this.clearButton = new System.Windows.Forms.Button();
             this.divideButton = new System.Windows.Forms.Button();
             this.sumButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // teks
             // 
-            this.teks.Font = new System.Drawing.Font("Microsoft Sans Serif", 70F);
-            this.teks.Location = new System.Drawing.Point(12, 9);
+            this.teks.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.teks.Location = new System.Drawing.Point(12, 56);
+            this.teks.Multiline = true;
             this.teks.Name = "teks";
-            this.teks.Size = new System.Drawing.Size(419, 113);
+            this.teks.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.teks.Size = new System.Drawing.Size(419, 110);
             this.teks.TabIndex = 0;
             this.teks.TextChanged += new System.EventHandler(this.teks_TextChanged);
+            this.teks.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.teks_KeyPress);
             // 
             // AddZero
             // 
             this.AddZero.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.AddZero.Location = new System.Drawing.Point(12, 374);
+            this.AddZero.Location = new System.Drawing.Point(13, 419);
             this.AddZero.Name = "AddZero";
             this.AddZero.Size = new System.Drawing.Size(79, 76);
             this.AddZero.TabIndex = 1;
@@ -74,7 +79,7 @@ namespace CalculatorApp
             // commas
             // 
             this.commas.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.commas.Location = new System.Drawing.Point(182, 374);
+            this.commas.Location = new System.Drawing.Point(183, 419);
             this.commas.Name = "commas";
             this.commas.Size = new System.Drawing.Size(79, 76);
             this.commas.TabIndex = 3;
@@ -85,9 +90,9 @@ namespace CalculatorApp
             // resultButton
             // 
             this.resultButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.resultButton.Location = new System.Drawing.Point(352, 292);
+            this.resultButton.Location = new System.Drawing.Point(353, 419);
             this.resultButton.Name = "resultButton";
-            this.resultButton.Size = new System.Drawing.Size(79, 158);
+            this.resultButton.Size = new System.Drawing.Size(79, 76);
             this.resultButton.TabIndex = 4;
             this.resultButton.Text = "=";
             this.resultButton.UseVisualStyleBackColor = true;
@@ -96,7 +101,7 @@ namespace CalculatorApp
             // addOne
             // 
             this.addOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.addOne.Location = new System.Drawing.Point(12, 292);
+            this.addOne.Location = new System.Drawing.Point(13, 337);
             this.addOne.Name = "addOne";
             this.addOne.Size = new System.Drawing.Size(79, 76);
             this.addOne.TabIndex = 5;
@@ -107,7 +112,7 @@ namespace CalculatorApp
             // substractButton
             // 
             this.substractButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.substractButton.Location = new System.Drawing.Point(267, 292);
+            this.substractButton.Location = new System.Drawing.Point(268, 337);
             this.substractButton.Name = "substractButton";
             this.substractButton.Size = new System.Drawing.Size(79, 76);
             this.substractButton.TabIndex = 6;
@@ -118,7 +123,7 @@ namespace CalculatorApp
             // addThree
             // 
             this.addThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.addThree.Location = new System.Drawing.Point(182, 292);
+            this.addThree.Location = new System.Drawing.Point(183, 337);
             this.addThree.Name = "addThree";
             this.addThree.Size = new System.Drawing.Size(79, 76);
             this.addThree.TabIndex = 7;
@@ -129,7 +134,7 @@ namespace CalculatorApp
             // addTwo
             // 
             this.addTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.addTwo.Location = new System.Drawing.Point(97, 292);
+            this.addTwo.Location = new System.Drawing.Point(98, 337);
             this.addTwo.Name = "addTwo";
             this.addTwo.Size = new System.Drawing.Size(79, 76);
             this.addTwo.TabIndex = 8;
@@ -140,7 +145,7 @@ namespace CalculatorApp
             // addFive
             // 
             this.addFive.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.addFive.Location = new System.Drawing.Point(97, 210);
+            this.addFive.Location = new System.Drawing.Point(98, 255);
             this.addFive.Name = "addFive";
             this.addFive.Size = new System.Drawing.Size(79, 76);
             this.addFive.TabIndex = 12;
@@ -151,7 +156,7 @@ namespace CalculatorApp
             // addSix
             // 
             this.addSix.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.addSix.Location = new System.Drawing.Point(182, 210);
+            this.addSix.Location = new System.Drawing.Point(183, 255);
             this.addSix.Name = "addSix";
             this.addSix.Size = new System.Drawing.Size(79, 76);
             this.addSix.TabIndex = 11;
@@ -162,7 +167,7 @@ namespace CalculatorApp
             // multiplyButton
             // 
             this.multiplyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.multiplyButton.Location = new System.Drawing.Point(267, 210);
+            this.multiplyButton.Location = new System.Drawing.Point(268, 255);
             this.multiplyButton.Name = "multiplyButton";
             this.multiplyButton.Size = new System.Drawing.Size(79, 76);
             this.multiplyButton.TabIndex = 10;
@@ -173,7 +178,7 @@ namespace CalculatorApp
             // addFour
             // 
             this.addFour.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.addFour.Location = new System.Drawing.Point(12, 210);
+            this.addFour.Location = new System.Drawing.Point(13, 255);
             this.addFour.Name = "addFour";
             this.addFour.Size = new System.Drawing.Size(79, 76);
             this.addFour.TabIndex = 9;
@@ -184,7 +189,7 @@ namespace CalculatorApp
             // clearEntryButton
             // 
             this.clearEntryButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.clearEntryButton.Location = new System.Drawing.Point(352, 128);
+            this.clearEntryButton.Location = new System.Drawing.Point(353, 255);
             this.clearEntryButton.Name = "clearEntryButton";
             this.clearEntryButton.Size = new System.Drawing.Size(79, 76);
             this.clearEntryButton.TabIndex = 18;
@@ -195,7 +200,7 @@ namespace CalculatorApp
             // addEight
             // 
             this.addEight.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.addEight.Location = new System.Drawing.Point(97, 128);
+            this.addEight.Location = new System.Drawing.Point(98, 173);
             this.addEight.Name = "addEight";
             this.addEight.Size = new System.Drawing.Size(79, 76);
             this.addEight.TabIndex = 17;
@@ -206,7 +211,7 @@ namespace CalculatorApp
             // addNine
             // 
             this.addNine.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.addNine.Location = new System.Drawing.Point(182, 128);
+            this.addNine.Location = new System.Drawing.Point(183, 173);
             this.addNine.Name = "addNine";
             this.addNine.Size = new System.Drawing.Size(79, 76);
             this.addNine.TabIndex = 16;
@@ -217,7 +222,7 @@ namespace CalculatorApp
             // addSeven
             // 
             this.addSeven.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.addSeven.Location = new System.Drawing.Point(12, 128);
+            this.addSeven.Location = new System.Drawing.Point(13, 173);
             this.addSeven.Name = "addSeven";
             this.addSeven.Size = new System.Drawing.Size(79, 76);
             this.addSeven.TabIndex = 14;
@@ -228,7 +233,7 @@ namespace CalculatorApp
             // addDoubleZeros
             // 
             this.addDoubleZeros.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.addDoubleZeros.Location = new System.Drawing.Point(97, 374);
+            this.addDoubleZeros.Location = new System.Drawing.Point(98, 419);
             this.addDoubleZeros.Name = "addDoubleZeros";
             this.addDoubleZeros.Size = new System.Drawing.Size(79, 76);
             this.addDoubleZeros.TabIndex = 19;
@@ -239,7 +244,7 @@ namespace CalculatorApp
             // clearButton
             // 
             this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.clearButton.Location = new System.Drawing.Point(352, 210);
+            this.clearButton.Location = new System.Drawing.Point(353, 337);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(79, 76);
             this.clearButton.TabIndex = 20;
@@ -250,7 +255,7 @@ namespace CalculatorApp
             // divideButton
             // 
             this.divideButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.divideButton.Location = new System.Drawing.Point(267, 128);
+            this.divideButton.Location = new System.Drawing.Point(268, 173);
             this.divideButton.Name = "divideButton";
             this.divideButton.Size = new System.Drawing.Size(79, 76);
             this.divideButton.TabIndex = 21;
@@ -261,7 +266,7 @@ namespace CalculatorApp
             // sumButton
             // 
             this.sumButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.sumButton.Location = new System.Drawing.Point(267, 374);
+            this.sumButton.Location = new System.Drawing.Point(268, 419);
             this.sumButton.Name = "sumButton";
             this.sumButton.Size = new System.Drawing.Size(79, 76);
             this.sumButton.TabIndex = 22;
@@ -269,11 +274,34 @@ namespace CalculatorApp
             this.sumButton.UseVisualStyleBackColor = true;
             this.sumButton.Click += new System.EventHandler(this.sumButton_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.button1.Location = new System.Drawing.Point(353, 173);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(79, 76);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "del";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.delButton_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.textBox1.Location = new System.Drawing.Point(12, 12);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.textBox1.Size = new System.Drawing.Size(418, 38);
+            this.textBox1.TabIndex = 24;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Riwayat_KeyPress);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(443, 459);
+            this.ClientSize = new System.Drawing.Size(443, 504);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.sumButton);
             this.Controls.Add(this.divideButton);
             this.Controls.Add(this.clearButton);
@@ -324,6 +352,8 @@ namespace CalculatorApp
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Button divideButton;
         private System.Windows.Forms.Button sumButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

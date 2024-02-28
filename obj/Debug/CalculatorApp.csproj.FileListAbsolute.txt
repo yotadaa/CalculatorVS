@@ -8,3 +8,13 @@ H:\f1e122037\vs\CalculatorVS\obj\Debug\CalculatorApp.csproj.GenerateResource.cac
 H:\f1e122037\vs\CalculatorVS\obj\Debug\CalculatorApp.csproj.CoreCompileInputs.cache
 H:\f1e122037\vs\CalculatorVS\obj\Debug\CalculatorApp.exe
 H:\f1e122037\vs\CalculatorVS\obj\Debug\CalculatorApp.pdb
+D:\VS\repos\CalculatorApp\bin\Debug\CalculatorApp.exe.config
+D:\VS\repos\CalculatorApp\bin\Debug\CalculatorApp.exe
+D:\VS\repos\CalculatorApp\bin\Debug\CalculatorApp.pdb
+D:\VS\repos\CalculatorApp\obj\Debug\CalculatorApp.csproj.AssemblyReference.cache
+D:\VS\repos\CalculatorApp\obj\Debug\CalculatorApp.Form1.resources
+D:\VS\repos\CalculatorApp\obj\Debug\CalculatorApp.Properties.Resources.resources
+D:\VS\repos\CalculatorApp\obj\Debug\CalculatorApp.csproj.GenerateResource.cache
+D:\VS\repos\CalculatorApp\obj\Debug\CalculatorApp.csproj.CoreCompileInputs.cache
+D:\VS\repos\CalculatorApp\obj\Debug\CalculatorApp.exe
+D:\VS\repos\CalculatorApp\obj\Debug\CalculatorApp.pdb
